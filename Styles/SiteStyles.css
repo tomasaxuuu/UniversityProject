@@ -67,7 +67,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 10px;
+    padding-right: 1px;
+    padding-left: 10px;
 }
 .social {
     display: inline-block;
@@ -180,6 +181,11 @@ main {
 .mod_img {
     text-align: center;
 }
+.social {
+    max-width: 200px; /* максимальная ширина подсказки (по умолчанию 200px) */
+    background-color: #ffffff00; /* цвет фона (по умолчанию #000) */
+}
+
 .button_close {
     margin: auto;
 }
