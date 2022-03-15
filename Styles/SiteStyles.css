@@ -167,6 +167,14 @@ main {
 .l_type.hidden {
     opacity: 0;
     transform: translateX(15vh);
+}.mod_img{
+    text-align: center;
+}
+.button_close{
+    margin: auto;
+}
+.search1{
+    margin: 0 0 0 auto;
 }
 @media (max-width: 1000px) {
     .l_type {
