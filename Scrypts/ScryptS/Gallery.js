@@ -24,7 +24,7 @@ const sliderBg = new Swiper('.slider_bg', {
 	slidesPerView: 3
 });
 
-sliderMain.controller.control = sliderBg;
+// sliderMain.controller.control = sliderBg;
 // document.querySelectorAll('.slider__item').forEach(item => {
 // 	item.addEventListener('click', event => {
 // 		item.classList.toggle('opened')
