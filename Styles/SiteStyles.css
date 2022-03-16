@@ -60,6 +60,12 @@ main {
     height: 160px;
     padding: 12px 0px 0px 40px;
 }
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #c471f5 0%, #fa71cd 100%);
+    background-size: contain;
+    border-radius: 8px;
+    border: 3px solid #f5cdcd;
+}
 .logo {
     display: flex;
 }
@@ -186,6 +192,10 @@ main {
     background-color: #ffffff00; /* цвет фона (по умолчанию #000) */
 }
 
+.modal_tit{
+    margin: auto;
+}
+
 .button_close {
     margin: auto;
 }
@@ -198,6 +208,32 @@ main {
 .text-light {
     font-size: 25px;
 }
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: bisque; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+
+
+
+  
 @media (max-width: 1582px) {
     .l_type {
         display: none;
