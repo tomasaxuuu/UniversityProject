@@ -66,15 +66,8 @@ main {
     border-radius: 8px;
     border: 3px solid #f5cdcd;
 }
-.logo {
-    display: flex;
-}
-.soc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 1px;
-    padding-left: 10px;
+.text-light {
+    margin-left: -60%;
 }
 .social {
     display: inline-block;
@@ -208,8 +201,6 @@ main {
 .text-light {
     font-size: 25px;
 }
-
-
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -228,12 +219,16 @@ main {
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
-
-
-
-
-
-  
+.modal-body {
+    font-size: 15px;
+    font-family: cursive;
+} 
+.modal-body h5 {
+    padding-top: 20px;
+}
+.text-light {
+    cursor: default;
+}
 @media (max-width: 1582px) {
     .l_type {
         display: none;
