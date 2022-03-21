@@ -22,6 +22,7 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+    max-width: 100%;
 }
 input,button,textarea{font-family:inherit;}
 
@@ -196,7 +197,10 @@ main {
 
 ::-webkit-scrollbar {
     width: 15px;
-    height: 0px;
+    /* height: 0px; */
+}
+.qwerty{
+    text-align: center;
 }
 
 /* Track */
@@ -240,6 +244,7 @@ main {
     font-family: cursive;
     font-size: 17px;
     text-align: justify;
+
 }
 .child {
     justify-content: flex-start;
@@ -269,6 +274,9 @@ main {
     width: 1000px;
     padding-top: 100px;
 }
+body{
+    overflow-x: hidden;
+}
 .death {
     padding-left: 50px;
     justify-content: flex-start;
@@ -287,6 +295,7 @@ main {
     display: block;
     margin: 50px auto auto auto;
 }
+
 
 /*Поиск*/
 @keyframes animationElement{
@@ -316,6 +325,20 @@ main {
     }
 }
 /* Поиск */
+#elastic{
+    display: block;
+    margin: 40px 0;
+}
+
+
+
+.marktext{
+    background: rgb(77, 77, 77);
+    color: bisque;
+    border-radius: 18px;
+}
+
+
 @media (max-width: 1582px) {
     .l_type {
         display: none;

@@ -1,16 +1,29 @@
-let inputText = document.querySelector('.inputText');
-    submitForm = document.querySelector('.submitForm');
-    information = document.querySelectorAll('.searchDiv');
+document.querySelector('#elastic').oninput = function(){
+    let val = this.value.trim();
+    let elasticItems = document.querySelectorAll('.info');
 
-    searchFunction = (text) => {
-        information.forEach((element) => {
-            if(element.textContent == text){
-                element.style = "animation:animationElement 2s;";
-                console.log(element);
+    if(val != '') {
+        elasticItems.forEach(function(elem){
+            if(elem.innerText.search(val) == -1){
+                elem.classList.add('hide');
+                elem.innerHTML = elem.innerText;
+            }
+            else{
+                elem.classList.remove('hide');
+                let str = elem.innerText;
+                elem.innerHTML = insertMark(str,elem.innerText.search(val), val.length);
             }
         });
     }
-submitForm.addEventListener('click', (e) => {
-    e.preventDefault();
-    searchFunction(inputText.value);
-});
+    else{
+        elasticItems.forEach(function(elem){
+            elem.classList.remove('hide');
+            elem.innerHTML = elem.innerText;
+        });
+    }
+}
+
+
+function insertMark(string,pos,len){
+    return string.slice(0,pos) + '<mark class="marktext">' + string.slice(pos,pos+len) + '</mark>' + string.slice(pos+len);
+}
