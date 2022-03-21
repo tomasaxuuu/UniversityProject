@@ -196,6 +196,7 @@ main {
 
 ::-webkit-scrollbar {
     width: 15px;
+    height: 0px;
 }
 
 /* Track */
