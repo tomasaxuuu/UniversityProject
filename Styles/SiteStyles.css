@@ -42,12 +42,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .fixed {
     margin: 0 auto;
 }
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+}
+.text-light {
+    margin-top: -4px;
+}
 main {
     overflow: hidden;
     height: 950px;
     background-color: bisque;
 }
-.fixed header{
+/* .fixed header{
     background-color: bisque;
     display: flex;
     justify-content: space-around;
@@ -55,7 +64,7 @@ main {
     width: 100%;
     height: 160px;
     padding: 12px 0px 0px 40px;
-}
+} */
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(to bottom, #c471f5 0%, #fa71cd 100%);
     background-size: contain;
@@ -71,7 +80,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 90px;
+    padding-top: 190px;
 }
 .art {
     display: flex;
@@ -190,12 +199,9 @@ main {
     width: 15px;
     /* height: 0px; */
 }
-.qwerty{
-    text-align: center;
-}
 /* Track */
 ::-webkit-scrollbar-track {
-    background:  bisque 
+    background-color: #212529;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -203,7 +209,7 @@ main {
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #888;
+    background: #212529;
 }
 .modal-body {
     font-size: 15px;
@@ -306,7 +312,7 @@ footer {
         display: none;
     }
 }
-@media (max-width: 1215px) {
+@media (max-width: 1472px) {
     .project {
         margin-left: -200px;
         flex-direction: column;
@@ -325,7 +331,7 @@ footer {
         font-size: 30px;
     }
 }
-@media (max-width: 545px) { 
+@media (max-width: 658px) { 
     .art {
         height: 240px;
         width: 240px;
@@ -345,8 +351,8 @@ footer {
     }
     .information p {
         margin-left: 100px;
-        width: 200px;
-        height: 300px;
+        width: 220px;
+        height: 280px;
     }
 }
 @media (max-width: 375px) {
