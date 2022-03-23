@@ -22,7 +22,10 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
+    min-width: 310px;
+    font-family: cursive;
+    background-color:bisque;
 }
 input,button,textarea{font-family:inherit;}
 
@@ -36,25 +39,15 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-html, body {
-    width: 100%;
-    height: 100%;
-    min-width: 310px;
-    font-family: cursive;
-    background-color:bisque;
-}
 .fixed {
-    /* max-width: 1920px; */
     margin: 0 auto;
 }
 main {
-    /* width: 100%; */
     overflow: hidden;
     height: 950px;
-    /* min-width: 310px; */
     background-color: bisque;
 }
-.fixed header {
+.fixed header{
     background-color: bisque;
     display: flex;
     justify-content: space-around;
@@ -69,9 +62,6 @@ main {
     border-radius: 8px;
     border: 3px solid #f5cdcd;
 }
-/* .text-light {
-    display: inline-block;
-} */
 .social {
     display: inline-block;
     margin-left: 10px;
@@ -89,7 +79,7 @@ main {
 }
 .logot {
     font-size: 49px;
-    color: brown;
+    color: rgb(255, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,9 +155,7 @@ main {
     padding: 400px 0 0 120px;
     display: flex;
     font-size: 40px;
-    color:rgb(255, 255, 255);
-    line-height: 1.6;
-    justify-content: center;
+    color:rgb(255, 0, 0);
     align-items: center;
     transition: opacity var(--transition), transform var(--transition);
 }
@@ -182,11 +170,9 @@ main {
     max-width: 200px; /* максимальная ширина подсказки (по умолчанию 200px) */
     background-color: #ffffff00; /* цвет фона (по умолчанию #000) */
 }
-
 .modal_tit{
     margin: auto;
 }
-
 .button_close {
     margin: auto;
 }
@@ -199,7 +185,6 @@ main {
 .text-light {
     font-size: 25px;
 }
-
 ::-webkit-scrollbar {
     width: 15px;
     /* height: 0px; */
@@ -207,25 +192,18 @@ main {
 .qwerty{
     text-align: center;
 }
-
-
 /* Track */
 ::-webkit-scrollbar-track {
-    background:  bisque
-    
+    background:  bisque 
 }
- 
 /* Handle */
 ::-webkit-scrollbar-thumb {
      background: #555; 
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #888;
 }
-
-
 .modal-body {
     font-size: 15px;
     font-family: cursive;
@@ -254,7 +232,7 @@ main {
     font-family: cursive;
     font-size: 17px;
     text-align: justify;
-
+    padding-bottom: 100px;
 }
 .child {
     justify-content: flex-start;
@@ -284,17 +262,13 @@ main {
     width: 1000px;
     padding-top: 100px;
 }
-
-
 .death {
     padding-left: 50px;
     justify-content: flex-start;
     height: 100%;
     width: 1000px;
     padding-top: 100px;
-    padding-bottom: 100px;
 }
-
 .biography  p {
     padding-top: 30px;
 }
@@ -306,23 +280,22 @@ main {
     display: block;
     margin: 50px auto auto auto;
 }
-
-
-
+footer {
+    background-color: #212529;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    min-width: 310px;
+}
 #elastic{
     display: block;
     margin: 40px 0;
 }
-
-
-
 .marktext{
     background: rgb(77, 77, 77);
     color: bisque;
     border-radius: 18px;
 }
-
-
 @media (max-width: 1582px) {
     .l_type {
         display: none;
