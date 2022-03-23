@@ -208,20 +208,24 @@ main {
     text-align: center;
 }
 
+
 /* Track */
 ::-webkit-scrollbar-track {
-    background: bisque; 
+    background:  bisque
+    
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+     background: #555; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #888;
 }
+
+
 .modal-body {
     font-size: 15px;
     font-family: cursive;
@@ -304,34 +308,7 @@ main {
 }
 
 
-/*Поиск*/
-@keyframes animationElement{
-    from{
-        border-radius: 1px;
-        box-shadow: 0px 0px 0px 0px blue;
-        -webkit-box-shadow:0px 0px 0px 0px blue;
-        -moz-box-shadow:0px 0px 0px 0px blue;
-        -ms-box-shadow: 0px 0px 0px 0px blue;
-        -o-box-shadow:0px 0px 0px 0px blue;
-    }
-    50%{
-        border-radius: 1px;
-        box-shadow: 0px 0px 0px 5px blue;
-        -webkit-box-shadow:0px 0px 0px 5px blue;
-        -moz-box-shadow:0px 0px 0px 5px blue;
-        -ms-box-shadow: 0px 0px 0px 5px blue;
-        -o-box-shadow:0px 0px 0px 5px blue;
-    }
-    to{
-        border-radius: 1px;
-        box-shadow: 0px 0px 0px 0px blue;
-        -webkit-box-shadow:0px 0px 0px 0px blue;
-        -moz-box-shadow:0px 0px 0px 0px blue;
-        -ms-box-shadow: 0px 0px 0px 0px blue;
-        -o-box-shadow:0px 0px 0px 0px blue;
-    }
-}
-/* Поиск */
+
 #elastic{
     display: block;
     margin: 40px 0;

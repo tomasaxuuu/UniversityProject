@@ -8,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="./Scrypts/ScryptS/swiper/swiper-bundle.min.css">
     <link id="favicon" rel="icon" href="./Images/crown.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Personal Project</title>
 </head>
 <body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 
         <header>
@@ -23,10 +24,11 @@
             <div class="text-light">Индивидуальный проект</div>
             
             <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" id="elastic" placeholder="Поиск по сайту" aria-label="Search">
+              <!-- <input class="form-control mr-sm-2" type="search" id="elastic" placeholder="Поиск по сайту" aria-label="Search"> -->
               <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Искать</button> -->
+              <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Меню</button>
               
-              <a type="button" class="social p-1 mr-1" data-toggle="modal" data-type="tooltip" data-target="#Mod_Contact"  target="blank" data-placement="bottom"  title="Контакты"><img src="./Images/Social.png" width="55" height="55"></a>    
+              <!-- <a type="button" class="social p-1 mr-1" data-toggle="modal" data-type="tooltip" data-target="#Mod_Contact"  target="blank" data-placement="bottom"  title="Контакты"><img src="./Images/Social.png" width="55" height="55"></a>     -->
             </form>
           </nav>
 
@@ -181,21 +183,34 @@
 
 
     <footer>
-     
- 
-    </footer>
-
+    </footer> 
 
 
     <script src="./Scrypts/ScryptS/swiper/swiper-bundle.min.js"></script>
     <script src="./Scrypts/ScryptS/Gallery.js"></script>
     <script type="text/javascript" src="./Scrypts/ScryptS/Find.js"></script>
     <!-- <script src="./Scrypts/ScryptS/Find.js"></script>  -->
+
+    <!-- Search modal -->
+    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Содержание сайта</h5>
+        <button type="button" class="btn-close btn-close-white text-rest" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        ...
+      </div>
+      <div class="offcanvas-footer">
+        <!-- футер меню -->
+        text
+      </div>
+      
+    </div>
     
     <!-- Modal_1 -->
 <div class="modal fade" id="mod_img_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" >
     <div class="modal-dialog" role="document" >
-      <div class="modal-content" style="background-color: bisque;">
+      <div class="modal-content text-dark" style="background-color: bisque;">
         <div class="modal-header">
           <h4 class="modal-title" id="exampleModalLongTitle">Сражение при Козлуджи (20 июня 1774 г.)</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
