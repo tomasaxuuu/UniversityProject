@@ -280,16 +280,17 @@ main {
     width: 1000px;
     padding-top: 100px;
 }
-body{
-    overflow-x: hidden;
-}
+
+
 .death {
     padding-left: 50px;
     justify-content: flex-start;
     height: 100%;
     width: 1000px;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
+
 .biography  p {
     padding-top: 30px;
 }
