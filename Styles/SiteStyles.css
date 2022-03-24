@@ -221,6 +221,47 @@ main {
 .text-light {
     cursor: default;
 }
+/* .offcanvas-body{
+    margin: right;
+} */
+/* анимация текста в модальном меню */
+.underline-one {
+	/* color: bisque; Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-one:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: darkgrey; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-one:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: bisque; /* Цвет подчеркивания при появлении линии*/
+    transition: width 1s;  /* Время эффекта */
+}
+
+
+/*  */
+
+.offcanvas-body{
+    transition: width 3s;
+}
+
 .name {
     background-color:bisque;
     display: flex;
