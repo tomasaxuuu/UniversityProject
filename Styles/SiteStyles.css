@@ -227,6 +227,16 @@ main {
     justify-content: center;
     font-family: cursive;
 }
+.name_1 {
+    background-color:bisque;
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    margin-bottom: 50px;
+    visibility: hidden;
+}
+
+
 .biography { 
     flex-wrap: wrap;
     width: 100%;
