@@ -184,7 +184,14 @@
 
 
     <footer>
-       
+
+      <!-- <div class="preloader">
+      <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor"
+          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+        </path>
+      </svg>
+    </div>  -->
 
     </footer> 
 
@@ -195,31 +202,33 @@
     <!-- <script src="./Scrypts/ScryptS/Find.js"></script>  -->
 
     <!-- Search modal -->
-    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel" style="color: bisque; margin: auto;">Содержание сайта</h5>
-        <button type="button" class="btn-close btn-close-white text-rest" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <a class="nav-link underline-one" href="#item-1" style="color: bisque;" data-bs-dismiss="offcanvas">Александр Васильевич Суворов</a>
-        <a class="nav-link underline-one" href="#item-2" style="color: bisque;" data-bs-dismiss="offcanvas">Подвиги А. В. Суворова</a>
-        <a class="nav-link underline-one" href="#item-3" style="color: bisque;" data-bs-dismiss="offcanvas">Биография А. В. Суворова</a>
-        <nav class="nav nav-pills flex-column">
-          <a class="nav-link ms-3 my-1 underline-one" href="#item-3-1" style="color: bisque;" data-bs-dismiss="offcanvas">Детство</a>
-          <a class="nav-link ms-3 my-1 underline-one" href="#item-3-2" style="color: bisque;" data-bs-dismiss="offcanvas">Военная служба</a>
-          <a class="nav-link ms-3 my-1 underline-one" href="#item-3-3" style="color: bisque;" data-bs-dismiss="offcanvas">Войны</a>
-          <a class="nav-link ms-3 my-1 underline-one" href="#item-3-4" style="color: bisque;" data-bs-dismiss="offcanvas">Личная жизнь</a>
-          <a class="nav-link ms-3 my-1 underline-one" href="#item-3-5" style="color: bisque;" data-bs-dismiss="offcanvas">Смерть</a>
-        </nav>
+    <div class="sidebar-nav">
+      <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel" style="color: bisque; margin: auto;">Содержание сайта</h5>
+          <button type="button" class="btn-close btn-close-white text-rest" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <a class="nav-link underline-one" href="#item-1" style="color: bisque;">Александр Васильевич Суворов</a>
+          <a class="nav-link underline-one" href="#item-2" style="color: bisque;">Подвиги А. В. Суворова</a>
+          <a class="nav-link underline-one" href="#item-3" style="color: bisque;">Биография А. В. Суворова</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1 underline-one" href="#item-3-1" style="color: bisque;">Детство</a>
+            <a class="nav-link ms-3 my-1 underline-one" href="#item-3-2" style="color: bisque;">Военная служба</a>
+            <a class="nav-link ms-3 my-1 underline-one" href="#item-3-3" style="color: bisque;">Войны</a>
+            <a class="nav-link ms-3 my-1 underline-one" href="#item-3-4" style="color: bisque;">Личная жизнь</a>
+            <a class="nav-link ms-3 my-1 underline-one" href="#item-3-5" style="color: bisque;">Смерть</a>
+          </nav>
+          
+
+
+        </div>
+        <div class="offcanvas-footer">
+          <!-- футер меню -->
+          text
+        </div>
         
-
-
       </div>
-      <div class="offcanvas-footer">
-        <!-- футер меню -->
-        text
-      </div>
-      
     </div>
     
     <!-- Modal_1 -->
@@ -384,6 +393,17 @@
   <script>
     $('[data-type="tooltip"]').tooltip();
   </script>
+
+
+
+
+<script>
+  offcanvas.onclick = function() {
+    this.time = "9s";
+  }
+  </script>
+
+
   
 </body>
 </html>
