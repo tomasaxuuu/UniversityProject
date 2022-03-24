@@ -39,32 +39,31 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-.fixed {
-    margin: 0 auto;
-}
-header {
+#header {
+    background-color:  #212529;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
     width: 100%;
+    height: 90px;
+    padding: 10px 40px;
     position: fixed;
     z-index: 3;
     top: 0;
-}
-.text-light {
-    margin-top: -4px;
 }
 main {
     overflow: hidden;
     height: 950px;
     background-color: bisque;
 }
-/* .fixed header{
-    background-color: bisque;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 160px;
-    padding: 12px 0px 0px 40px;
-} */
+.logo {
+    width: 70px;
+}
+.text-light {
+    display: inline-block;
+    justify-content: center;
+ }
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(to bottom, #c471f5 0%, #fa71cd 100%);
     background-size: contain;
@@ -80,14 +79,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 190px;
+    padding-top: 155px;
 }
 .art {
     display: flex;
     margin-left: 240px;
+    padding-top: 45px;
 }
 .logot {
-    font-size: 49px;
+    font-size: 45px;
     color: rgb(255, 0, 0);
     display: flex;
     justify-content: center;
@@ -110,7 +110,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: -70px;
-    padding: 0 100px 0 100px;
+    padding: 45px 100px 0 100px;
 }
 :root {
     --transition: .75s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -261,7 +261,6 @@ main {
 .offcanvas-body{
     transition: width 3s;
 }
-
 .name {
     background-color:bisque;
     display: flex;
@@ -276,16 +275,12 @@ main {
     margin-bottom: 50px;
     visibility: hidden;
 }
-
-
 .biography { 
     flex-wrap: wrap;
     width: 100%;
-    /* height: 950px; */
     overflow: hidden;
-    /* min-width: 310px; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color:bisque;
     font-family: cursive;
     font-size: 17px;
@@ -296,32 +291,28 @@ main {
     justify-content: flex-start;
     height: 100%;
     width: 1000px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     padding-top: 100px;
 }
 .service {
-    padding-left: 50px;
     justify-content: flex-start;
     height: 100%;
     width: 1000px;
     padding-top: 100px;
 }
 .wars {
-    padding-left: 50px;
     justify-content: flex-start;
     height: 100%;
     width: 1000px;
     padding-top: 100px;
 }
 .life {
-    padding-left: 50px;
     justify-content: flex-start;
     height: 100%;
     width: 1000px;
     padding-top: 100px;
 }
 .death {
-    padding-left: 50px;
     justify-content: flex-start;
     height: 100%;
     width: 1000px;
@@ -369,7 +360,7 @@ footer {
         flex-direction: column;
     }
     .art {
-        height: 320px;
+        height: 360px;
         width: 320px;
     }
     .information {
@@ -382,9 +373,15 @@ footer {
         font-size: 30px;
     }
 }
-@media (max-width: 658px) { 
+@media (max-width: 1050px) {
+    .biography p, h3 {
+        width: 800px;
+        margin-left: 50px;
+    }
+}
+@media (max-width: 730px) { 
     .art {
-        height: 240px;
+        height: 270px;
         width: 240px;
     }
     .information p {
@@ -397,8 +394,11 @@ footer {
 }
 @media (max-width: 440px) {
     .art {
-        height: 220px;
+        height: 260px;
         width: 220px;
+    }
+    .information {
+        margin-top: -20px;
     }
     .information p {
         margin-left: 100px;
