@@ -195,22 +195,32 @@ main {
 .text-light {
     font-size: 25px;
 }
+
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
+    /* height: 0px; */
+}
+::-webkit-scrollbar:hover {
+    /* width: 8px; */
     /* height: 0px; */
 }
 /* Track */
 ::-webkit-scrollbar-track {
-    background-color: #212529;
+    background-color: white
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
      background: #555; 
+     border-color: #555;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #212529;
+    border-color: #212529;
+
 }
+
+
 .modal-body {
     font-size: 15px;
     font-family: cursive;
@@ -297,6 +307,16 @@ main {
   }
 
 /*  */
+
+/* Кнопка */
+
+
+  
+/*  */
+
+.offcanvas-footer{
+    margin: auto;
+}
 
 .name {
     background-color:bisque;
