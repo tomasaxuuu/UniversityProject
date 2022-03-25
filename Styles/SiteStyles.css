@@ -397,6 +397,41 @@ footer {
     position: absolute;
     min-width: 310px;
 }
+.footer_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 65px;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+footer p {
+    color: white;
+    font-size: 20px;
+}
+.Muh, .Gayaz {
+    display: inline-block;
+    padding-left: 50px;
+}
+.rights {
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.soc_menu a {
+    display: inline-block;
+    padding-left: 5px;
+    padding-left: 10px;
+}
+.Muh p {
+    margin-left: -10px;
+}
+.Gayaz p {
+    margin-left: 25px;
+}
 #elastic{
     display: block;
     margin: 40px 0;
