@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./Styles/SiteStyles.css">
+    <link rel="stylesheet" type="text/css" href="Styles/SiteStyles.css">
+    <link rel="stylesheet" type="text/css" href="Styles/light.css" id="theme-link">
     <link rel="stylesheet" type="text/css" href="./Scrypts/ScryptS/swiper/swiper-bundle.min.css">
     <link id="favicon" rel="icon" href="./Images/crown.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,7 +18,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
-
         <header id="header">
           <!-- <nav class="navbar navbar-light bg-dark justify-content-between"> -->
             <div class="logo"><img src="./Images/crown.png" height="55" width="55" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
@@ -27,6 +27,8 @@
               <!-- <input class="form-control mr-sm-2" type="search" id="elastic" placeholder="Поиск по сайту" aria-label="Search"> -->
               <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Искать</button> -->
               <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Меню</button>
+              <button class="btn btn-outline-light ml-2" type="button theme-button" id="theme-button">тема</button>
+              <!-- <div class="theme-button" id="theme-button">Change theme</div> -->
               <!-- <a type="button" class="social p-1 mr-1" data-toggle="modal" data-type="tooltip" data-target="#Mod_Contact"  target="blank" data-placement="bottom"  title="Контакты"><img src="./Images/Social.png" width="55" height="55"></a>     -->
             </form>
           <!-- </nav> -->
@@ -43,6 +45,7 @@
                     
             </div>
         </div>
+
     </main>
     <div class="l_type">Подвиги А.В. Суворова: </div>
     <div class="swiper slider slider_main bg-dark" id="item-2">
@@ -182,6 +185,9 @@
 
 
 
+
+
+
     <footer>
       <div class="footer_menu">
         <div class="rights">© All rights reserverd "UlSTU", 2022
@@ -217,7 +223,8 @@
 
     <script src="./Scrypts/ScryptS/swiper/swiper-bundle.min.js"></script>
     <script src="./Scrypts/ScryptS/Gallery.js"></script>
-    <!-- <script type="text/javascript" src="./Scrypts/ScryptS/Find.js"></script> -->
+    <!-- <script src="./Scrypts/ScryptS/Themes.js"></script> -->
+    <script type="text/javascript" src="./Scrypts/ScryptS/Themes.js"></script>
     <!-- <script src="./Scrypts/ScryptS/Find.js"></script>  -->
 
     <!-- Search modal -->
@@ -244,7 +251,21 @@
 
         </div>
         <hr>
+        <p style="margin: auto;" class="123 mb-1 mt-1">Смена темы сайта</p>
+        <br>
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-light ml-2" for="btnradio1" name="theme" value="light">Full Light</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-dark" for="btnradio2" name="theme" value="dark">Full Dark</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-success mr-2" for="btnradio3" name="theme">Lime</label>
+          </div>
+        <hr>
         <div class="offcanvas-footer">
+          
          
           <!-- футер меню -->
           <!-- <button type="button" class="btn btn-outline-light btn-lg btn-block" data-dismiss="modal">Закрыть</button> -->
@@ -285,6 +306,7 @@
           </div>
         </div>
         <div class="modal-footer">
+          
           <button type="button" class="btn btn-outline-dark btn-lg btn-block" data-dismiss="modal">Закрыть</button>
         </div>
       </div>
