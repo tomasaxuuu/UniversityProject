@@ -204,26 +204,31 @@ main {
 
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 14px;
     height: 0px;
+    /* box-shadow: 0 0 2px red inset; */
 }
 /* Track */
 ::-webkit-scrollbar-track {
-    background-color: #FDF5E6;
+    background-color: #232526;
+    
+    /* box-shadow: 0 0 2px white inset; */
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-     background: #808080; 
-     border-color: #808080;
+    background: #808080; 
+    border-color: #232526;
+    /* box-shadow: 0 0 2px white inset; */
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #696969;
-    border-color: #696969;
+    border-color: #232526;
+    
+    
     opacity: 0;
 
 }
-
 /* для черных блоков */
 
 
@@ -372,8 +377,9 @@ main {
     .done{
         opacity: 0;
         visibility: hidden;
+        
     }
-
+    
     @keyframes upDown {
         0%{
             height: 15px;
