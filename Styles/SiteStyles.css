@@ -583,27 +583,21 @@ footer p {
 }
 @media (max-width: 1050px) {
     .biography p, h3 {
-        width: 800px;
-        margin-left: 50px;
+        width: 500px;
+        height: 100%;
+    }
+    .child, .death, .wars, .life, .service {
+        width: 500px;
+        height: 100%;
     }
 }
 @media (max-width: 885px) {
-    #item-3-1.biography p, h3 {
-        width: 500px;
-        /* margin-left: 200px; */
-    }
-    .name {
-        margin-left: 40px;
-    }
     .soc_menu {
         display: none;
     }
     .contacts {
         display: flex;
     }
-    /* #item-3-1.biography img {
-        margin-left: 200px;
-    } */
 } 
 @media (max-width: 730px) { 
     .art {
@@ -618,15 +612,18 @@ footer p {
         width: 400px;
     }
 }
-@media (max-width: 590px) {
-    #item-3-1.biography p, h3 {
+@media (max-width: 520px) {
+    .biography p, h3 {
         width: 300px;
-        margin-left: 90px;
+        height: 100%;
     }
-    #item-3-1.biography img {
+    .child, .death, .wars, .life, .service {
         width: 300px;
-        height: 300px;
-        margin-left: 90px;
+        height: 100%;
+    }
+    .biography img {
+        width: 300px;
+        height: 100%;
     }
 }
 @media (max-width: 440px) {
@@ -647,26 +644,4 @@ footer p {
     .logot {
         font-size: 20px;
     }
-    #item-3-1.biography {
-        margin-left: -40px;
-    }
-    .name {
-        margin-left: -3px;
-        width: 100%;
-    }
-    #item-3-1.biography p, h3 {
-        width: 230px;
-        
-    }
-    #item-3-1.biography img {
-        width: 230px;
-        height: 230px;
-        margin-left: 89px;
-    }
-    .name {
-        margin-left: 4px;
-    }
-    /* #footer {
-       margin-right: -20px;
-    } */
 }
