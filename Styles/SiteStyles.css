@@ -639,6 +639,13 @@ footer p {
         width: 220px;
         height: 280px;
     }
+    .rights {
+        font-size: 15px;
+    }
+    #footer img {
+        width: 35px;
+        height: 35px;
+    }
 }
 @media (max-width: 375px) {
     .logot {
