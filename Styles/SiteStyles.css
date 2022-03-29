@@ -543,6 +543,14 @@ footer p {
     border-radius: 18px;
 }
 
+/* .btn-sm{
+    visibility: hidden;
+
+}
+.v_butt{
+    visibility: visible;
+} */
+
 
 /* Семна темы */
 .theme-button
@@ -668,6 +676,10 @@ footer p {
     }
     .text-light {
         font-size: 13px;
+    }
+    .btn-sm svg{
+        width: 20px;
+        height: 20px;
     }
 }
 @media (max-width: 375px) {
