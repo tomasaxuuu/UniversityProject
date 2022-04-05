@@ -14,18 +14,7 @@ a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
 
 html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-    /* max-width: 100%; */
-    min-width: 310px;
-    font-family: cursive;
-    background-color:bisque;
+    background-color:#23282B;
 }
 input,button,textarea{font-family:inherit;}
 
@@ -40,126 +29,23 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 #header {
-    /* background-color:  #212529; */
-    /* background:#232526; */
-    background: #FFDEAD;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1 1 auto;
-    width: 100%;
-    height: 70px;
-    padding: 10px 40px;
-    position: fixed;
-    z-index: 3;
-    top: 0;
+    background:#232526;
 }
 main {
     overflow: hidden;
     height: 950px;
-    background-color: bisque;
-}
-.logo {
-    width: 70px;
-}
-
-.text-light {
-    display: inline-block;
-    justify-content: center;
- }
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #c471f5 0%, #fa71cd 100%);
-    background-size: contain;
-    border-radius: 8px;
-    border: 3px solid #f5cdcd;
-}
-.social {
-    /* display: none; */
-    display: inline-block;
-    margin-left: 10px;
+    background-color: #23282B;
 }
 .project {
-    background-color:bisque;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 155px;
+    background-color:#23282B;
 }
-.art {
-    display: flex;
-    margin-left: 240px;
-    padding-top: 45px;
-}
+
 .logot {
-    font-size: 45px;
-    color: rgb(255, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
+    color: #fffdd0;
+
 }
 .info {
-    text-align: justify;
-    font-size: 24px;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.4;
-}
-#elastic {
-    width: 300px;
-    height: 40px;
-}
-.information {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    margin-top: -70px;
-    padding: 45px 100px 0 100px;
-}
-:root {
-    --transition: .75s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.slider {
-    margin-top: 120px;
-    overflow: visible;
-    height: 100%;
-}
-.slider__wrapper {
-    transition:var(--transition)!important;
-    display: flex;
-    align-items:center;
-}
-.slider__item {
-    max-height: 75vh;
-    position: relative;
-    overflow: hidden;
-    transition: transform var(--transition), box-shadow var(--transition);
-}
-.slider_main {
-    
-    /* background-color:rgb(0, 0, 0); */
-    background: #232526;
-    
-    top: -13vh;
-}
-.img {
-    width: 300%;
-    height: 100%;
-    background-size: cover;
-    position: absolute;
-    left: -100%;
-    transition:var(--transition)!important;
-    will-change: transform var(--transition);
-}
-.slider_bg {
-    z-index: 0;
-    top: -80vh;
-    left: -10vh;
-    opacity: .3;
-    filter: saturate(1000) blur(140px);
-}
-.slider_bg .slider__item {
-    max-height: 100%;
+    color: white;
 }
 .slider__item.opened {
     z-index: 2;
@@ -172,37 +58,15 @@ main {
     padding: 400px 0 0 120px;
     display: flex;
     font-size: 40px;
-    color:rgb(255, 0, 0);
+    /* color:rgb(255, 0, 0); */
+    color: #fffdd0;
     align-items: center;
     transition: opacity var(--transition), transform var(--transition);
-}
-.l_type.hidden {
-    opacity: 0;
-    transform: translateX(15vh);
-}
-.mod_img {
-    text-align: center;
 }
 .social {
     max-width: 200px; /* максимальная ширина подсказки (по умолчанию 200px) */
     background-color: #ffffff00; /* цвет фона (по умолчанию #000) */
 }
-.modal_tit{
-    margin: auto;
-}
-.button_close {
-    margin: auto;
-}
-.search1 {
-    margin: 0 0 0 auto;
-}
-.form-inline {
-    padding-right: 10px;
-}
-.text-light {
-    font-size: 25px;
-}
-
 
 ::-webkit-scrollbar {
     width: 14px;
@@ -230,29 +94,7 @@ main {
     opacity: 0;
 
 }
-/* для черных блоков */
 
-
-
-
-
-.modal-body {
-    font-size: 15px;
-    font-family: cursive;
-} 
-.modal-body h5 {
-    padding-top: 20px;
-}
-.text-light {
-    cursor: default;
-}
-/* анимация текста в модальном меню */
-.underline-one {
-	/* color: bisque; Цвет обычной ссылки */
-    position: relative;
-    cursor: pointer;
-    text-decoration: none; /* Убираем подчеркивание */
-}
 .underline-one:after {
 	content: "";
     display: block;
@@ -276,56 +118,6 @@ main {
     background-color: bisque; /* Цвет подчеркивания при появлении линии*/
     transition: width 1s;  /* Время эффекта */
 }
-
-
-/*  */
-/* Спиннер */
-
-/* .preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    visibility: visible;
-
-    background: bisque;
-    z-index: 1001;
-  }
-
-
-  .preloader__image {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 70px;
-    height: 70px;
-    margin-top: -35px;
-    margin-left: -35px;
-    text-align: center;
-    animation: preloader-rotate 2s infinite linear;
-  }
-  .done{
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  @keyframes preloader-rotate {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  .loaded_hiding .preloader {
-    transition: 0.3s opacity;
-    opacity: 0;
-  }
-
-  .loaded .preloader {
-    display: none;
-    
-  } */
 
 .pr-bg{
     background: rgb(22, 22, 21);
@@ -409,13 +201,14 @@ main {
 }
 
 .name {
-    background-color:bisque;
+    background-color:#23282B;
+    color: white;
     display: flex;
     justify-content: center;
     font-family: cursive;
 }
 .name_1 {
-    background-color:bisque;
+    background-color:#23282B;
     display: flex;
     justify-content: center;
     font-family: cursive;
@@ -428,51 +221,17 @@ main {
     overflow: hidden;
     display: flex;
     justify-content: space-around;
-    background-color:bisque;
+    background-color:#23282B;
+    color: white;
     font-family: cursive;
     font-size: 17px;
     text-align: justify;
     padding-bottom: 100px;
 }
-.child {
-    justify-content: flex-start;
-    height: 100%;
-    width: 1000px;
-    /* padding-left: 50px; */
-    padding-top: 100px;
-}
-.service {
-    justify-content: flex-start;
-    height: 100%;
-    width: 1000px;
-    padding-top: 100px;
-}
-.wars {
-    justify-content: flex-start;
-    height: 100%;
-    width: 1000px;
-    padding-top: 100px;
-}
-.life {
-    justify-content: flex-start;
-    height: 100%;
-    width: 1000px;
-    padding-top: 100px;
-}
-.death {
-    justify-content: flex-start;
-    height: 100%;
-    width: 1000px;
-    padding-top: 100px;
-}
-.biography  p {
-    padding-top: 30px;
-}
-.biography h3 {
-    text-align: center;
-}
+
 .biography img {
-    border: 3px solid rgb(0, 0, 0);
+    /* border: 3px solid rgb(0, 0, 0); */
+    border: 3px solid #232526;
     display: block;
     margin: 50px auto auto auto;
     -moz-user-select: none; 
