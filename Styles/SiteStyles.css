@@ -42,6 +42,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 #header {
     /* background-color:  #212529; */
     background:#232526;
+    /* background: #FFDEAD; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -563,6 +564,17 @@ footer p {
     margin-bottom: 50px;
     cursor: pointer;
 }
+.theme_butt{
+    display: none;
+}
+
+
+
+.offcanvas h5{
+    margin: auto;
+    color: bisque;
+}
+
 
 /*  */
 @media (max-width: 1582px) {
