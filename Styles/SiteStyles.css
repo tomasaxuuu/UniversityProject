@@ -62,7 +62,6 @@ main {
 .logo {
     width: 70px;
 }
-
 .text-light {
     display: inline-block;
     justify-content: center;
@@ -633,6 +632,22 @@ footer p {
         width: 400px;
     }
 }
+@media (max-width: 580px) { 
+    #header img {
+        width: 45px;
+        height: 45px;
+    }
+    .logo {
+        width: 45px;
+    }
+    #header .text-light {
+        font-size: 22px;
+    }
+    #header button {
+        padding: 0;
+        margin-right: 0;
+    }
+}
 @media (max-width: 520px) {
     .biography p, h3 {
         width: 300px;
@@ -653,7 +668,7 @@ footer p {
     .logo {
         width: 35px;
     }
-    .text-light {
+    #header .text-light {
         font-size: 18px;
     }
     .form-inline {
@@ -687,7 +702,7 @@ footer p {
     .logo {
         width: 25px;
     }
-    .text-light {
+    #header .text-light {
         font-size: 13px;
     }
     .btn-sm svg{
@@ -698,5 +713,18 @@ footer p {
 @media (max-width: 375px) {
     .logot {
         font-size: 20px;
+    }
+}
+@media (max-width: 340px) {
+    #header .text-light {
+       font-size: 11px;
+       margin-top: 5px;
+    }
+    #header img {
+        width: 20px;
+        height: 20px;
+    }
+    #footer .rights {
+        font-size: 13px;
     }
 }
