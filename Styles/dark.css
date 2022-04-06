@@ -45,11 +45,12 @@ main {
 
 .logot {
     color: #fffdd0;
-    transition: all ease 2s;
+    transition: all ease 1s;
 
 }
 .info {
     color: white;
+    transition: all ease 1s;
 }
 .slider__item.opened {
     z-index: 2;
@@ -150,15 +151,12 @@ main {
     visibility: visible;
     z-index: 1001;
     background: #232526;
-    /* background: linear-gradient(#0F2027,#203A43,#2C5364); */
 
     }
     .preloader span{
         display: block;
         height: 15px;
         width: 15px;
-        /* background-color: blue; */
-        /* background: linear-gradient(#0F2027,#203A43,#2C5364); */
         background: linear-gradient(#FFE4C4,#F5DEB3);
         margin: 0 7px;
         border-radius: 10px;
