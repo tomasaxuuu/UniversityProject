@@ -346,17 +346,16 @@ main {
     overflow: hidden;
     visibility: visible;
     z-index: 1001;
-    background: #232526;
-    /* background: linear-gradient(#0F2027,#203A43,#2C5364); */
+    background: linear-gradient(#FFE4C4,#F5DEB3);
+
 
     }
     .preloader span{
         display: block;
         height: 15px;
         width: 15px;
-        /* background-color: blue; */
-        /* background: linear-gradient(#0F2027,#203A43,#2C5364); */
-        background: linear-gradient(#FFE4C4,#F5DEB3);
+        
+        background: #232526;
         margin: 0 7px;
         border-radius: 10px;
         animation: 1.2s upDown infinite;
