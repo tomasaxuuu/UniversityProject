@@ -465,6 +465,23 @@ main {
     width: 1000px;
     padding-top: 100px;
 }
+.liter {
+    justify-content: flex-start;
+    height: 100%;
+    width: 1000px;
+    padding-top: 100px;
+}
+.liter p {
+    text-align: center;
+}
+.liter a {
+    text-decoration: none;
+    color:#232526;
+}
+.liter a:hover {
+    text-decoration: none;
+    color:#ffffff;
+}
 .biography  p {
     padding-top: 30px;
 }
@@ -606,7 +623,7 @@ footer p {
         width: 500px;
         height: 100%;
     }
-    .child, .death, .wars, .life, .service {
+    .child, .death, .wars, .life, .service, .liter {
         width: 500px;
         height: 100%;
     }
@@ -653,7 +670,7 @@ footer p {
         width: 300px;
         height: 100%;
     }
-    .child, .death, .wars, .life, .service {
+    .child, .death, .wars, .life, .service, .liter {
         width: 300px;
         height: 100%;
     }
