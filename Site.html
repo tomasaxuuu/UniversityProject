@@ -30,7 +30,7 @@
 
 
 
-
+              
               <button class="btn btn-dark btn-sm mr-3" type="button" id="theme-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-sun theme_butt_1" viewBox="0 0 16 16">
                   <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
@@ -241,12 +241,9 @@
             </p>
             <img src="./Images/death.jpg" height="500" width="500">
           </div>
-          <div class="liter" id="item-4">
-            <h3>Источники информации:</h3>
-            <p><a target="_blank" href="https://biographe.ru/politiki/aleksandr-suvorov/">1. Александр Васильевич Суворов</a></p>
-            <p><a target="_blank" href="https://zen.yandex.ru/media/id/5d9d743723bf480239558cb4/5-podvigov-polkovodca-suvorova-5e84645d5fee206321fcba85">2. 5 подвигов полководца Суворова</a></p>
-            <p><a target="_blank" href="https://histrf.ru/read/articles/bitva-pri-novi-samaia-trudnaia-pobieda-suvorova">3. Битва при Нови</a></p>
-          </div>
+            <a target="_blank" href="https://biographe.ru/politiki/aleksandr-suvorov/">1. Александр Васильевич Суворов</a>
+            <a target="_blank" href="https://zen.yandex.ru/media/id/5d9d743723bf480239558cb4/5-podvigov-polkovodca-suvorova-5e84645d5fee206321fcba85">2. 5 подвигов полководца Суворова</a>
+            <a target="_blank" href="https://histrf.ru/read/articles/bitva-pri-novi-samaia-trudnaia-pobieda-suvorova">3. Битва при Нови</a>
       </div>
 
 
@@ -331,9 +328,17 @@
             <a class="nav-link ms-3 my-1 underline-one" data-bs-dismiss="offcanvas" href="#item-3-4" style="color: bisque;">Личная жизнь</a>
             <a class="nav-link ms-3 my-1 underline-one" data-bs-dismiss="offcanvas" href="#item-3-5" style="color: bisque;">Смерть</a>
           </nav>
-          <a class="nav-link underline-one" data-bs-dismiss="offcanvas" href="#item-4" style="color: bisque;">Источники информации</a>
-          
-
+          <nav class="nav nav-pills flex-column">
+            <ul>
+              <li><a class="ist" href="#">Источники информации</a>
+                <ul>
+                  <li><a target="_blank" href="https://biographe.ru/politiki/aleksandr-suvorov/">1. Александр Васильевич Суворов</a></li>
+                  <li><a target="_blank" href="https://zen.yandex.ru/media/id/5d9d743723bf480239558cb4/5-podvigov-polkovodca-suvorova-5e84645d5fee206321fcba85">2. 5 подвигов Суворова</a></li>
+                  <li><a target="_blank" href="https://histrf.ru/read/articles/bitva-pri-novi-samaia-trudnaia-pobieda-suvorova">3. Битва при Нови</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
 
         </div>
         <hr>

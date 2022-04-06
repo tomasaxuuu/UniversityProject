@@ -205,6 +205,36 @@ main {
     font-size: 25px;
 }
 
+.nav ul {
+    list-style: none;
+}
+.nav ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav ul li a:hover {
+    color:rgb(194, 194, 194);
+}
+.nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color:bisque;
+}
+.nav ul li .ist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul ul {
+    display: none;
+    position: absolute;
+}
+.nav ul li:hover ul {
+    display: block;
+    height: 100px;
+}
 
 ::-webkit-scrollbar {
     width: 14px;
