@@ -89,20 +89,20 @@ main {
 }
 /* Track */
 ::-webkit-scrollbar-track {
-    background-color: #232526;
+    background-color: #23282B;
     
     /* box-shadow: 0 0 2px white inset; */
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #808080; 
-    border-color: #232526;
+    background: white; 
+    border-color: #23282B;
     /* box-shadow: 0 0 2px white inset; */
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #696969;
-    border-color: #232526;
+    background: #fffdd0;
+    border-color: #23282B;
     
     
     opacity: 0;
