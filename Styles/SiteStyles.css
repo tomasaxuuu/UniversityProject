@@ -138,7 +138,8 @@ main {
 .slider_main {
     
     /* background-color:rgb(0, 0, 0); */
-    background: #232526;
+    /* background: #232526; */
+    background: bisque;
     
     top: -13vh;
 }

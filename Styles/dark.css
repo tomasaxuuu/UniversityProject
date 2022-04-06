@@ -35,9 +35,11 @@ main {
     overflow: hidden;
     height: 950px;
     background-color: #23282B;
+    transition: all ease 1s;
 }
 .project {
     background-color:#23282B;
+    transition: all ease 1s;
 }
 
 .logot {
@@ -53,6 +55,15 @@ main {
     transform: scale(1.4);
     box-shadow: rgb(0 0 0 / .75) 0 0 0 10000px;
 }
+.slider_main {
+    
+    /* background-color:rgb(0, 0, 0); */
+    /* background: #232526; */
+    background:#23282B;
+    transition: all ease 1s;
+    
+    top: -13vh;
+}
 .l_type {
     z-index: 2;
     position: absolute;
@@ -66,7 +77,7 @@ main {
 }
 .social {
     max-width: 200px; /* максимальная ширина подсказки (по умолчанию 200px) */
-    background-color: #ffffff00; /* цвет фона (по умолчанию #000) */
+    background-color: #ffffff00; /*цвет фона (по умолчанию #000)*/
 }
 
 ::-webkit-scrollbar {
@@ -228,6 +239,7 @@ main {
     font-size: 17px;
     text-align: justify;
     padding-bottom: 100px;
+    transition: all ease 1s;
 }
 
 .biography img {
