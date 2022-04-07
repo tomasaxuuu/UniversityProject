@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="Styles/SiteStyles.css">
-  <link rel="stylesheet" type="text/css" href="Styles/light.css" id="theme-link"> 
-  <!-- В случае если тестовая смена темы будет мешать - закомментируй 8 строку -->
-  <link rel="stylesheet" type="text/css" href="./Scrypts/swiper/swiper-bundle.min.css">
-  <link id="favicon" rel="icon" href="./Images/crown.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Биография Суворова</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styles/SiteStyles.css">
+    <link rel="stylesheet" type="text/css" href="Styles/light.css" id="theme-link">
+    <!-- В случае если тестовая смена темы будет мешать - закомментируй 8 строку -->
+    <link rel="stylesheet" type="text/css" href="./Scrypts/swiper/swiper-bundle.min.css">
+    <link id="favicon" rel="icon" href="./Images/crown.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Биография Суворова</title>
 </head>
-<body>  
+<body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
         <header id="header">
+          <!-- <nav class="navbar navbar-light bg-dark justify-content-between"> -->
             <div class="logo"><img src="./Images/crown.png" height="45" width="45" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
             <div class="text-light" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;">Биография А. В. Суворова</div>
             
             <form class="form-inline">
+              <!-- <input class="form-control mr-sm-2" type="search" id="elastic" placeholder="Поиск по сайту" aria-label="Search"> -->
+              <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Искать</button> -->
 
+
+
+              
               <button class="btn btn-dark btn-sm mr-3" type="button" id="theme-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-sun theme_butt_1" viewBox="0 0 16 16">
                   <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
@@ -35,13 +41,40 @@
                 </svg>
               </button>
 
+
+
+
+              <!-- <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                </ul>
+              </div> -->
+
               <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
                 </svg>
               </button>
               
+
+
+              <!-- <button class="btn btn-outline-light v_butt" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Меню</button> -->
+              <!-- <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Меню</button> -->
+
+
+              <!-- <div class="container-fluid">
+                <button class="navbar-toggler" style="background: bisque;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon" style="color: #232526;"></span>
+                </button> -->
+              <!-- <button class="btn btn-outline-light ml-2" type="button theme-button" id="theme-button">тема</button> -->
+              <!-- <div class="theme-button" id="theme-button">Change theme</div> -->
+              <!-- <a type="button" class="social p-1 mr-1" data-toggle="modal" data-type="tooltip" data-target="#Mod_Contact"  target="blank" data-placement="bottom"  title="Контакты"><img src="./Images/Social.png" width="55" height="55"></a>     -->
             </form>
+          <!-- </nav> -->
         </header>
 
     <main class="main_">
@@ -67,6 +100,12 @@
         <span></span>
       </div>
     </div>
+
+    
+
+
+
+
     
     <div class="l_type">Подвиги А.В. Суворова: </div>
     <div class="swiper slider slider_main" id="item-2">
@@ -235,6 +274,26 @@
           </div>
         </div>
       </div>
+
+      <div class="preloader" style="animation: 2s;" id="page-preloader">
+      <!-- <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> -->
+        <!-- <path fill="currentColor"
+          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+        </path> -->
+        
+
+      <!-- </svg> -->
+      </div>
+
+    <!-- <div class="pr-bg">
+      <div class="preloader" id="page-preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div> -->
     
 
     </footer> 
@@ -270,7 +329,7 @@
 
           <nav class="nav nav-pills flex-column">
             <ul>
-              <li><a class="ist underline-one" href="#">Источники информации</a>
+              <li><a class="ist" href="#">Источники информации</a>
                 <ul>
                   <div class="inf_menu" style="transition: all ease 2s;">
                     <li><a class = "underline-one" target="_blank" href="https://biographe.ru/politiki/aleksandr-suvorov/">1. Александр Васильевич Суворов</a></li>
