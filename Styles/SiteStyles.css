@@ -204,7 +204,11 @@ main {
 .text-light {
     font-size: 25px;
 }
-
+li .underline-one:hover {
+    width: 360px;
+    color: bisque;
+    transition: all ease 2s;
+}
 .nav ul {
     list-style: none;
 }
@@ -226,9 +230,7 @@ main {
 
 }
 .nav ul li .ist {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: -34px;
 }
 .nav ul ul {
     display: none;
@@ -237,6 +239,7 @@ main {
 .nav ul li:hover ul {
     display: block;
     height: 100px;
+    margin-left: -46px;
     transition: all ease 2s;
 }
 
