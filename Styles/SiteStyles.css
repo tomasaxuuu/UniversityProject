@@ -214,13 +214,16 @@ main {
     clear: both;
 }
 .nav ul li a:hover {
-    color:rgb(194, 194, 194);
+    /* color:rgb(194, 194, 194); */
+    color: bisque;
+    transition: all ease 2s;
 }
 .nav ul li a {
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
     color:bisque;
+
 }
 .nav ul li .ist {
     display: flex;
@@ -234,6 +237,7 @@ main {
 .nav ul li:hover ul {
     display: block;
     height: 100px;
+    transition: all ease 2s;
 }
 
 ::-webkit-scrollbar {
