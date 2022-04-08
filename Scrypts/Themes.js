@@ -26,3 +26,7 @@ function ChangeTheme()
 
     Save(theme);
 }
+
+// document.getElementById('theme-button').onclick = function(){
+//     alert("вы успешно переключили тему");
+// }
