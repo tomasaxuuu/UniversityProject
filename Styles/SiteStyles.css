@@ -237,6 +237,10 @@ li .underline-one:hover {
 }
 .nav ul li .ist {
     margin-left: -34px;
+    color: bisque;
+}
+.nav ul li .ist:hover {
+    color: bisque;
 }
 .nav ul ul {
     display: none;
@@ -613,7 +617,6 @@ footer p {
     color: bisque;
     border-radius: 18px;
 }
-
 /* .btn-sm{
     visibility: hidden;
 
