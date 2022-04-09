@@ -242,6 +242,9 @@ main {
     padding-bottom: 100px;
     transition: all ease 1s;
 }
+.modal-content{
+    background-color: red;
+}
 
 .biography img {
     /* border: 3px solid rgb(0, 0, 0); */
@@ -347,6 +350,7 @@ footer p {
 .theme_butt{
     display: flex;
 }
+
 
 
 .offcanvas h5{
