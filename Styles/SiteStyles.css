@@ -545,6 +545,10 @@ li .underline-one:hover {
     -webkit-user-select: none; 
     -ms-user-select: none; 
     user-select: none;
+    transition: 1s;
+}
+.biography img:hover {
+    transform: scale(1.09);
 }
 #footer {
     padding-bottom: 40px;
@@ -573,7 +577,7 @@ li .underline-one:hover {
     -ms-user-select: none; 
     user-select: none;
 }
-footer p {
+#footer p {
     color: white;
     font-size: 20px;
 }
@@ -581,13 +585,14 @@ footer p {
     display: inline-block;
     padding-left: 50px;
 }
+.Muh img, .Gayaz img {
+    transition: 1s;
+}
 .Muh img:hover{
-    width: 31px;
-    height: 31px;
+    transform: scale(1.4);
 }
 .Gayaz img:hover{
-    width: 31px;
-    height: 31px;
+    transform: scale(1.4);
 }
 .rights {
     color: white;
