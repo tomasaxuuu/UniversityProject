@@ -58,9 +58,6 @@ main {
     box-shadow: rgb(0 0 0 / .75) 0 0 0 10000px;
 }
 .slider_main {
-    
-    /* background-color:rgb(0, 0, 0); */
-    /* background: #232526; */
     background:#23282B;
     transition: all ease 1s;
     
@@ -72,41 +69,33 @@ main {
     padding: 400px 0 0 120px;
     display: flex;
     font-size: 40px;
-    /* color:rgb(255, 0, 0); */
     color: #fffdd0;
     align-items: center;
     transition: opacity var(--transition), transform var(--transition);
 }
 .social {
-    max-width: 200px; /* максимальная ширина подсказки (по умолчанию 200px) */
-    background-color: #ffffff00; /*цвет фона (по умолчанию #000)*/
+    max-width: 200px;
+    background-color: #ffffff00;
 }
 
 ::-webkit-scrollbar {
     width: 14px;
     height: 0px;
-    /* box-shadow: 0 0 2px red inset; */
 }
-/* Track */
+
 ::-webkit-scrollbar-track {
     background-color: #23282B;
-    
-    /* box-shadow: 0 0 2px white inset; */
 }
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: white; 
     border-color: #23282B;
-    /* box-shadow: 0 0 2px white inset; */
 }
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
     background: #fffdd0;
     border-color: #23282B;
-    
-    
     opacity: 0;
-
 }
 
 .underline-one:after {
@@ -116,9 +105,9 @@ main {
     right: 0;
     bottom: -3px;
     width: 0;
-    height: 2px; /* Высота линии */
-    background-color: darkgrey; /* Цвет подчеркивания при исчезании линии*/
-    transition: width 0.5s; /* Время эффекта */
+    height: 2px;
+    background-color: darkgrey; 
+    transition: width 0.5s; 
 }
 
 .underline-one:hover:after {
@@ -128,15 +117,13 @@ main {
     position: absolute;
     left: 0;
     bottom: -3px;
-    height: 2px; /* Высота линии */
-    background-color: bisque; /* Цвет подчеркивания при появлении линии*/
-    transition: width 1s;  /* Время эффекта */
+    height: 2px; 
+    background-color: bisque;
+    transition: width 1s;
 }
 
 .pr-bg{
     background: rgb(22, 22, 21);
-    
-    
 }
 
 .preloader{
@@ -199,13 +186,7 @@ main {
 
 
 
-/*  */
 
-/* Кнопка */
-
-
-  
-/*  */
 
 .offcanvas-footer{
     margin: auto;
@@ -247,8 +228,6 @@ main {
 }
 
 .biography img {
-    /* border: 3px solid rgb(0, 0, 0); */
-    /* border: 3px solid #232526; */
     border: 3px solid white;
     display: block;
     margin: 50px auto auto auto;
@@ -259,7 +238,6 @@ main {
 }
 #footer {
     padding-bottom: 40px;
-    /* background-color: #212529; */
     background:#232526;
     width: 100%;
     height: 200px;
@@ -321,23 +299,10 @@ footer p {
     border-radius: 18px;
 }
 
-/* .btn-sm{
-    visibility: hidden;
-
-}
-.v_butt{
-    visibility: visible;
-} */
-
-
-/* Семна темы */
 .theme-button
 {
     position: absolute;
-    /* right: 5px; */
-    /* top: 5px; */
     display: inline-block;
-    /* padding: 10px 25px; */
     margin-bottom: 50px;
     cursor: pointer;
 }

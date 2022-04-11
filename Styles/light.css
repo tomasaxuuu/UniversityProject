@@ -22,10 +22,10 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-    /* max-width: 100%; */
     min-width: 310px;
     font-family: cursive;
     background-color:bisque;
+    transition: all ease 1s;
 }
 input,button,textarea{font-family:inherit;}
 
@@ -40,9 +40,7 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 #header {
-    /* background-color:  #212529; */
     background:#232526;
-    /* background: #FFDEAD; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,23 +56,21 @@ main {
     overflow: hidden;
     height: 950px;
     background-color: bisque;
+    transition: all ease 1s;
 }
 .logo {
     width: 70px;
 }
-
 .text-light {
     display: inline-block;
     justify-content: center;
  }
 ::-webkit-scrollbar-thumb {
-    /* background: linear-gradient(to bottom, #c471f5 0%, #fa71cd 100%); */
     background-size: contain;
     border-radius: 8px;
     border: 3px solid #f5cdcd;
 }
 .social {
-    /* display: none; */
     display: inline-block;
     margin-left: 10px;
 }
@@ -84,6 +80,7 @@ main {
     justify-content: center;
     align-items: center;
     padding-top: 155px;
+    transition: all ease 1s;
 }
 .art {
     display: flex;
@@ -92,12 +89,12 @@ main {
 }
 .logot {
     font-size: 45px;
-    /* color: rgb(255, 0, 0); */
     color: #232526;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
+    transition: all ease 1s;
 }
 .info {
     text-align: justify;
@@ -105,6 +102,7 @@ main {
     justify-content: center;
     align-items: center;
     line-height: 1.4;
+    transition: all ease 1s;
 }
 #elastic {
     width: 300px;
@@ -137,9 +135,8 @@ main {
     transition: transform var(--transition), box-shadow var(--transition);
 }
 .slider_main {
-    
-    /* background-color:rgb(0, 0, 0); */
     background: bisque;
+    transition: all ease 1s;
     
     top: -13vh;
 }
@@ -173,7 +170,6 @@ main {
     padding: 400px 0 0 120px;
     display: flex;
     font-size: 40px;
-    /* color:rgb(255, 0, 0); */
     color: #232526;
     align-items: center;
     transition: opacity var(--transition), transform var(--transition);
@@ -186,8 +182,8 @@ main {
     text-align: center;
 }
 .social {
-    max-width: 200px; /* максимальная ширина подсказки (по умолчанию 200px) */
-    background-color: #ffffff00; /* цвет фона (по умолчанию #000) */
+    max-width: 200px;
+    background-color: #ffffff00;
 }
 .modal_tit{
     margin: auto;
@@ -204,37 +200,84 @@ main {
 .text-light {
     font-size: 25px;
 }
+li .underline-one{
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    width: 360px;
+}
+li .underline-one:hover::after {
+    width: 360px;
+    /* color: bisque; */
+    transition: all ease 2s;
+    background-color: bisque; 
+    transition: width 1s; 
+}
+li .underline-one:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: darkgrey;
+    transition: width 0.5s; 
+}
 
+.nav ul {
+    list-style: none;
+}
+.nav ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav ul li a:hover {
+    color: bisque;
+    transition: all ease 2s;
+}
+.nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color:bisque;
+}
+.nav ul li .ist {
+    margin-left: -34px;
+    color: bisque;
+}
+.nav ul li .ist:hover {
+    color: bisque;
+}
+.nav ul ul {
+    display: none;
+    position: absolute;
+}
+.nav ul li:hover ul {
+    display: block;
+    height: 100px;
+    margin-left: -46px;
+    transition: all ease 2s;
+}
 
 ::-webkit-scrollbar {
     width: 14px;
     height: 0px;
-    /* box-shadow: 0 0 2px red inset; */
 }
-/* Track */
+
 ::-webkit-scrollbar-track {
     background-color: bisque;
-    
-    /* box-shadow: 0 0 2px white inset; */
 }
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: #23282B; 
     border-color: bisque;
-    /* box-shadow: 0 0 2px white inset; */
 }
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
     background: #232526;
     border-color: bisque;
-    
-    
     opacity: 0;
-
 }
-/* для черных блоков */
-
-
 
 
 
@@ -248,12 +291,11 @@ main {
 .text-light {
     cursor: default;
 }
-/* анимация текста в модальном меню */
+
 .underline-one {
-	/* color: bisque; Цвет обычной ссылки */
     position: relative;
     cursor: pointer;
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none;
 }
 .underline-one:after {
 	content: "";
@@ -262,9 +304,9 @@ main {
     right: 0;
     bottom: -3px;
     width: 0;
-    height: 2px; /* Высота линии */
-    background-color: darkgrey; /* Цвет подчеркивания при исчезании линии*/
-    transition: width 0.5s; /* Время эффекта */
+    height: 2px; 
+    background-color: darkgrey; 
+    transition: width 0.5s; 
 }
 
 .underline-one:hover:after {
@@ -274,65 +316,13 @@ main {
     position: absolute;
     left: 0;
     bottom: -3px;
-    height: 2px; /* Высота линии */
-    background-color: bisque; /* Цвет подчеркивания при появлении линии*/
-    transition: width 1s;  /* Время эффекта */
+    height: 2px;
+    background-color: bisque;
+    transition: width 1s;
 }
-
-
-/*  */
-/* Спиннер */
-
-/* .preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    visibility: visible;
-
-    background: bisque;
-    z-index: 1001;
-  }
-
-
-  .preloader__image {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 70px;
-    height: 70px;
-    margin-top: -35px;
-    margin-left: -35px;
-    text-align: center;
-    animation: preloader-rotate 2s infinite linear;
-  }
-  .done{
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  @keyframes preloader-rotate {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  .loaded_hiding .preloader {
-    transition: 0.3s opacity;
-    opacity: 0;
-  }
-
-  .loaded .preloader {
-    display: none;
-    
-  } */
 
 .pr-bg{
     background: rgb(22, 22, 21);
-    
-    
 }
 
 .preloader{
@@ -346,16 +336,15 @@ main {
     overflow: hidden;
     visibility: visible;
     z-index: 1001;
-    
-    background: linear-gradient(#FFE4C4,#F5DEB3);
+   background: linear-gradient(#FFE4C4,#F5DEB3);
+
 
     }
     .preloader span{
         display: block;
         height: 15px;
         width: 15px;
-        background: #232526;
-
+         background: #232526;
         margin: 0 7px;
         border-radius: 10px;
         animation: 1.2s upDown infinite;
@@ -397,13 +386,6 @@ main {
 
 
 
-/*  */
-
-/* Кнопка */
-
-
-  
-/*  */
 
 .offcanvas-footer{
     margin: auto;
@@ -414,6 +396,7 @@ main {
     display: flex;
     justify-content: center;
     font-family: cursive;
+    transition: all ease 1s;
 }
 .name_1 {
     background-color:bisque;
@@ -422,6 +405,7 @@ main {
     font-family: cursive;
     margin-bottom: 50px;
     visibility: hidden;
+    transition: all ease 1s;
 }
 .biography { 
     flex-wrap: wrap;
@@ -434,12 +418,12 @@ main {
     font-size: 17px;
     text-align: justify;
     padding-bottom: 100px;
+    transition: all ease 1s;
 }
 .child {
     justify-content: flex-start;
     height: 100%;
     width: 1000px;
-    /* padding-left: 50px; */
     padding-top: 100px;
 }
 .service {
@@ -466,6 +450,23 @@ main {
     width: 1000px;
     padding-top: 100px;
 }
+.liter {
+    justify-content: flex-start;
+    height: 100%;
+    width: 1000px;
+    padding-top: 100px;
+}
+.liter p {
+    text-align: center;
+}
+.liter a {
+    text-decoration: none;
+    color:#232526;
+}
+.liter a:hover {
+    text-decoration: none;
+    color:#ffffff;
+}
 .biography  p {
     padding-top: 30px;
 }
@@ -481,9 +482,9 @@ main {
     -ms-user-select: none; 
     user-select: none;
 }
+
 #footer {
     padding-bottom: 40px;
-    /* background-color: #212529; */
     background:#232526;
     width: 100%;
     height: 200px;
@@ -508,13 +509,22 @@ main {
     -ms-user-select: none; 
     user-select: none;
 }
-footer p {
+#footer p {
     color: white;
     font-size: 20px;
 }
 .Muh, .Gayaz {
     display: inline-block;
     padding-left: 50px;
+}
+.Muh img, .Gayaz img {
+    transition: 0.5s;
+}
+.Muh img:hover{
+    transform: scale(1.4);
+}
+.Gayaz img:hover{
+    transform: scale(1.4);
 }
 .rights {
     color: white;
@@ -545,23 +555,12 @@ footer p {
     border-radius: 18px;
 }
 
-/* .btn-sm{
-    visibility: hidden;
-
-}
-.v_butt{
-    visibility: visible;
-} */
 
 
-/* Семна темы */
 .theme-button
 {
     position: absolute;
-    /* right: 5px; */
-    /* top: 5px; */
     display: inline-block;
-    /* padding: 10px 25px; */
     margin-bottom: 50px;
     cursor: pointer;
 }
@@ -570,11 +569,11 @@ footer p {
 }
 
 
-
 .offcanvas h5{
     margin: auto;
     color: bisque;
 }
+
 
 
 /*  */
@@ -607,7 +606,7 @@ footer p {
         width: 500px;
         height: 100%;
     }
-    .child, .death, .wars, .life, .service {
+    .child, .death, .wars, .life, .service, .liter {
         width: 500px;
         height: 100%;
     }
@@ -633,12 +632,28 @@ footer p {
         width: 400px;
     }
 }
+@media (max-width: 580px) { 
+    #header img {
+        width: 45px;
+        height: 45px;
+    }
+    .logo {
+        width: 45px;
+    }
+    #header .text-light {
+        font-size: 22px;
+    }
+    #header button {
+        padding: 0;
+        margin-right: 0;
+    }
+}
 @media (max-width: 520px) {
     .biography p, h3 {
         width: 300px;
         height: 100%;
     }
-    .child, .death, .wars, .life, .service {
+    .child, .death, .wars, .life, .service, .liter {
         width: 300px;
         height: 100%;
     }
@@ -653,7 +668,7 @@ footer p {
     .logo {
         width: 35px;
     }
-    .text-light {
+    #header .text-light {
         font-size: 18px;
     }
     .form-inline {
@@ -687,7 +702,7 @@ footer p {
     .logo {
         width: 25px;
     }
-    .text-light {
+    #header .text-light {
         font-size: 13px;
     }
     .btn-sm svg{
@@ -698,5 +713,18 @@ footer p {
 @media (max-width: 375px) {
     .logot {
         font-size: 20px;
+    }
+}
+@media (max-width: 340px) {
+    #header .text-light {
+       font-size: 11px;
+       margin-top: 5px;
+    }
+    #header img {
+        width: 20px;
+        height: 20px;
+    }
+    #footer .rights {
+        font-size: 13px;
     }
 }
