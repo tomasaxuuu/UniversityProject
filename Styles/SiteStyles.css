@@ -566,11 +566,8 @@ li .underline-one:after{
     -webkit-user-select: none; 
     -ms-user-select: none; 
     user-select: none;
-    transition: 1s;
 }
-.biography img:hover {
-    transform: scale(1.09);
-}
+
 #footer {
     padding-bottom: 40px;
     /* background-color: #212529; */
@@ -607,7 +604,7 @@ li .underline-one:after{
     padding-left: 50px;
 }
 .Muh img, .Gayaz img {
-    transition: 1s;
+    transition: 0.5s;
 }
 .Muh img:hover{
     transform: scale(1.4);
